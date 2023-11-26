@@ -1,4 +1,4 @@
-import { Button } from './ui'
+import { Button, Input } from './ui'
 import './App.scss'
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <Button label={'Button Default'} />
       <Button primary={true} label={'Button Primary'} />
+      <Input label={'Default Input'} state={'default'} />
     </div>
   )
 }

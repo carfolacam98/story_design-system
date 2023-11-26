@@ -1,4 +1,4 @@
-import { Input } from '../ui/atoms/Input'; 
+import { Input } from '../ui'; 
 
 export default {
   title: 'UI/Input',
@@ -10,26 +10,30 @@ export default {
   },
 };
 
-export const Default = (args) => <Input {...args} />;
-Default.args = {
-  label: 'Default Input',
-  state: 'default',
+export const Default = {
+  args: {
+    label: 'Default Input',
+    state: 'default',
+  },
 };
 
-export const Focused = (args) => <Input {...args} />;
-Focused.args = {
-  label: 'Focused Input',
-  state: 'focused',
+export const Focused = {
+  args: {
+    label: 'Focused Input',
+    state: 'focused',
+  },
 };
 
-export const Error = (args) => <Input {...args} />;
-Error.args = {
-  label: 'Error Input',
-  state: 'error',
+export const Error = {
+  args: {
+    label: 'Error Input',
+    state: 'error',
+  },
 };
 
-export const Disabled = (args) => <Input {...args} />;
-Disabled.args = {
-  label: 'Disabled Input',
-  state: 'disabled',
+export const Disabled = {
+  args: {
+    label: 'Disabled Input',
+    state: 'disabled',
+  },
 };
