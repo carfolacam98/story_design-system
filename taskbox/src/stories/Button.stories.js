@@ -6,21 +6,27 @@ export default {
   component: Button,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    disabled: { control: 'boolean' },
+    variant: {
+      options: ['primary', 'secondary'],
+    },
   },
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
+    variant: 'primary',
     label: 'Button',
+    disabled: false,
   },
 };
 
 export const Secondary = {
   args: {
+    variant: 'secondary',
     label: 'Button',
+    disabled: false,
   },
 };
 
