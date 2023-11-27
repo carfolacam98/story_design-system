@@ -5,8 +5,11 @@ export default {
   component: Input,
   tags: ['autodocs'],
   argTypes: {
-    state: { control: 'select', options: ['default', 'focused', 'error', 'disabled'] },
+    error: { control: 'boolean' },
+    disabled: { control: 'boolean' },
     label: { control: 'text' },
+    placeholder: { control: 'text' },
+    state: { table: { disable: true } },
   },
 };
 

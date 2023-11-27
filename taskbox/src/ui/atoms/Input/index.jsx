@@ -1,11 +1,11 @@
+// Componente Input
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './input.module.scss';
 
-export const Input = ({ state, label, ...props }) => {
+export const Input = ({ type, label, error, disabled, ...props }) => {
   const [focused, setFocused] = useState(false);
- 
-
+const {state}=props
   const handleFocus = () => {
     setFocused(true);
   };
@@ -14,34 +14,30 @@ export const Input = ({ state, label, ...props }) => {
     setFocused(false);
   };
 
-  const inputStateClass =
-    state === 'error'
-      ? styles.error
-      : state === 'disabled'
-      ? styles.disabled
-      : focused
-      ? styles.focused
-      : styles.default;
+
 
   return (
-    <div className={`${styles.inputContainer} ${inputStateClass}`}>
+    <div className={`${styles.inputContainer}`}>
       <label>{label}</label>
       <input
         {...props}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        className={styles.input}
+        className={`${styles.input} ${error ? styles.error : ''} ${styles[state]}`}
+        disabled={disabled}
       />
     </div>
   );
 };
 
 Input.propTypes = {
-  state: PropTypes.oneOf(['default', 'focused', 'error', 'disabled']),
   label: PropTypes.string.isRequired,
+  error: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 Input.defaultProps = {
-  state: 'default',
-};
 
+  error: false,
+  disabled: false,
+};

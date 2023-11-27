@@ -1,36 +1,56 @@
+
 .inputContainer {
-    margin-bottom: 16px;
-  }
-  
+  margin-bottom: 16px;
+
+
+
   label {
     display: block;
     margin-bottom: 8px;
     color: #333;
+    margin-bottom: 16px;
+    font-size: 12px;
+
+
   }
-  
+
   .input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+    &:focused {
+      outline: none;
+      border-color: #007bff;
+    }
   
-  .default {
-    background-color: #fff;
+    &::placeholder {
+      color: #999;
+    }
+
+    &.default {
+      background-color: #fff;
+    }
+
+    &.error {
+      border-color: #dc3545;
+    }
+
+    &.disabled {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      cursor: not-allowed;
+    }
   }
-  
-  .focused {
-    border-color: #007bff;
-  }
-  
-  .error {
-    border-color: #dc3545;
-  }
-  
-  .disabled {
-    background-color: #f8f9fa;
-    color: #6c757d;
-    cursor: not-allowed;
-  }
+}
+
   
