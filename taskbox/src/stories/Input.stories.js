@@ -20,12 +20,6 @@ export const Default = {
   },
 };
 
-export const Focused = {
-  args: {
-    label: 'Focused Input',
-    state: 'focused',
-  },
-};
 
 export const Error = {
   args: {

@@ -1,4 +1,4 @@
-
+@import '../../../index.scss';
 .inputContainer {
   margin-bottom: 16px;
 
@@ -22,16 +22,14 @@
     margin-bottom: 16px;
     font-family: 'Montserrat';
     font-size: 18px;
+    color: var(--secondary-90) ;
 
 
     &:focus {
       outline: none;
-      border-color: #007bff;
+      border-color: var(--primary-90);
     }
-    &:focused {
-      outline: none;
-      border-color: #007bff;
-    }
+
   
     &::placeholder {
       color: #999;
@@ -39,10 +37,11 @@
 
     &.default {
       background-color: #fff;
+      border-color: var(--secondary-70);
     }
 
     &.error {
-      border-color: #dc3545;
+      border-color: #AB1A1A;
     }
 
     &.disabled {

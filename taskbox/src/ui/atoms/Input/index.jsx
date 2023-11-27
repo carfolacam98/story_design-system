@@ -23,7 +23,7 @@ const {state}=props
         {...props}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        className={`${styles.input} ${error ? styles.error : ''} ${styles[state]}`}
+        className={`${styles.input} ${error ? styles.error : ''}`}
         disabled={disabled}
       />
     </div>
