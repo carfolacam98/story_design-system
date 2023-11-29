@@ -1,13 +1,8 @@
-import { Button, Input } from './ui'
-import './App.scss'
+import Landing from "./pages/Landing"
 
 function App() {
   return (
-    <div className="App">
-      <Button label={'Button Default'} />
-      <Button primary={true} label={'Button Primary'} />
-      <Input label={'Default Input'} state={'default'} />
-    </div>
+    <Landing />
   )
 }
 
