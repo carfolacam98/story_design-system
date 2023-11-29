@@ -1,0 +1,63 @@
+.hero {
+  padding: 120px 32px;
+  display: flex;
+  column-gap: 24px;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .card {
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
+  .imagen {
+    background: url(../assets/imagen.png) no-repeat;
+    width: 683px;
+    min-width: 683px;
+    height: 422px;
+    border-radius: 20px;
+  }
+}
+
+.courses {
+  padding: 0 32px 120px 32px;
+
+  h2 {
+    margin-bottom: 54px;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 24px 0;
+  }
+
+  .cards {
+    display: flex;
+
+    & > div > div {
+      max-width: 395px;
+    }
+  }
+}
+
+.contact {
+  padding: 0 32px 130px 32px;
+  display: flex;
+  column-gap: 24px;
+
+  .imagen {
+    background: url(../assets/imagen.png) no-repeat;
+    height: 485px;
+    border-radius: 20px;
+    background-size: cover;
+  }
+}
+
+.form {
+  width: 100%;
+  max-width: 418px;
+  padding-left: 72px;
+}

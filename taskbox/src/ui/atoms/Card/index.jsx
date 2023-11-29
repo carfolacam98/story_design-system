@@ -12,12 +12,12 @@ export const Card = ({ hasButton, imageUrl, buttonText , buttonRedirect, childre
       </div>
       {hasButton && (
         <Button
-        href={buttonRedirect}
-        label={buttonText}
-        variant='secondary'
-        size= 'large'
+          href={buttonRedirect}
+          label={buttonText}
+          variant='secondary'
+          size='large'
+          icon={true}
         />
-
       )}
     </div>
   );
