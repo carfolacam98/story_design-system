@@ -6,7 +6,7 @@ import { Button, Input, Card } from '../ui'
 function Landing () {
   const cards = [
     {
-      image: '/src/assets/imagen.png',
+      image: '../imagen.png',
       date: '28 Noviembre 2023 / 18:00 a 21:00 Chile',
       title: 'Accesibilidad web',
       teacher: 'Carolina Aguilera',
@@ -14,7 +14,7 @@ function Landing () {
       button: true
     },
     {
-      image: '/src/assets/imagen.png',
+      image: '../imagen.png',
       date: '21 Noviembre 2023 / 18:00 a 21:00 Chile',
       title: 'Sistemas de diseño',
       teacher: 'Constanza Echeverría y Gustavo Astorga',
@@ -22,7 +22,7 @@ function Landing () {
       button: true
     },
     {
-      image: '/src/assets/imagen.png',
+      image: '../imagen.png',
       date: '14 Noviembre 2023 / 18:00 a 21:00 Chile',
       title: 'Arquitectura de información',
       teacher: 'Matías Silva',
