@@ -14,7 +14,8 @@ export const Card = ({ hasButton, imageUrl, buttonText , buttonRedirect, childre
         <Button
         href={buttonRedirect}
         label={buttonText}
-        variant='primary'
+        variant='secondary'
+        size= 'large'
         />
 
       )}
