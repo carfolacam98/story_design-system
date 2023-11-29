@@ -21,4 +21,36 @@
       width: 35px;
     }
   }
+
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      padding: 16px 12px;
+    }
+
+    img {
+      width: 80px;
+    }
+
+    .courses {
+      width: 100%;
+    }
+
+    .social {
+      display: flex;
+      column-gap: 68px;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 12px;
+      }
+    }
+  }
 }

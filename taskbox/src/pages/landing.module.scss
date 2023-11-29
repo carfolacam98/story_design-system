@@ -37,10 +37,12 @@
   .cards {
     display: flex;
 
-    & > div > div {
+    &>div>div {
       max-width: 395px;
     }
   }
+
+
 }
 
 .contact {
@@ -60,4 +62,31 @@
   width: 100%;
   max-width: 418px;
   padding-left: 72px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .imagen {
+      display: none;
+    }
+  }
+
+  .cards {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .courses {
+    width: 100%;
+  }
+
+  .contact {
+    .imagen {
+      display: none;
+    }
+  }
+
+  .form {
+    padding-left: 0px;
+  }
 }
