@@ -7,6 +7,12 @@
     margin-bottom: 24px;
   }
 
+  .card {
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
   .imagen {
     background: url(../assets/imagen.png) no-repeat;
     width: 683px;
@@ -24,8 +30,16 @@
     text-align: center;
   }
 
+  h3 {
+    margin: 24px 0;
+  }
+
   .cards {
     display: flex;
+
+    & > div > div {
+      max-width: 395px;
+    }
   }
 }
 
@@ -44,5 +58,6 @@
 
 .form {
   width: 100%;
-  max-width: 346px;
+  max-width: 418px;
+  padding-left: 72px;
 }

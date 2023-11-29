@@ -3,16 +3,12 @@
 .inputContainer {
   margin-bottom: 16px;
 
-
-
   label {
     display: block;
     margin-bottom: 8px;
     color: #333;
     margin-bottom: 16px;
     font-size: 12px;
-
-
   }
 
   .input {
@@ -25,13 +21,11 @@
     font-size: 18px;
     color: var(--secondary-90) ;
 
-
     &:focus {
       outline: none;
       border-color: var(--primary-90);
     }
 
-  
     &::placeholder {
       color: #999;
     }
@@ -52,5 +46,3 @@
     }
   }
 }
-
-  
