@@ -2,24 +2,28 @@
 
 .inputContainer {
   margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
 
   label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: var(--secondary-90) ;
     margin-bottom: 16px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 10px;
     margin-bottom: 16px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
     font-size: 18px;
+    border-color: var(--secondary-70) ;
     color: var(--secondary-90) ;
+    
 
     &:focus {
       outline: none;
@@ -31,7 +35,7 @@
     }
 
     &.default {
-      background-color: #fff;
+      
       border-color: var(--secondary-70);
     }
 
@@ -43,6 +47,7 @@
       background-color: #f8f9fa;
       color: #6c757d;
       cursor: not-allowed;
+      border-color: #6c757d !important;
     }
   }
 }

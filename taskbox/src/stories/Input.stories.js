@@ -25,6 +25,7 @@ export const Error = {
   args: {
     label: 'Error Input',
     state: 'error',
+    error: true,
   },
 };
 
@@ -32,5 +33,6 @@ export const Disabled = {
   args: {
     label: 'Disabled Input',
     state: 'disabled',
+    disabled: true,
   },
 };
